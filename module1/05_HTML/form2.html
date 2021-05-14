@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BARKERY SCHOOL</title>
+	<link rel="stylesheet" type="text/css" href="formstyle2.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-
+	awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="form-box">
+		<h1>LOGIN HERE</h1>
+		<div class="input-box">
+			<i class="fa fa-envelope-o"></i>
+			<input type="email" placeholder="Email ID">
+			
+		</div>
+		<div class="input-box">
+			<i class="fa fa-key"></i>
+			<input type="password" placeholder="Password" id="myInput">
+			<span class="eye" onclick="myFunction()">
+			<i id="hide1" class="fa fa-eye"></i>
+			<i id="hide2"  class="fa fa-eye-slash"></i>
+			</span>
+		</div>
+		<button type="button" class="login-btn">LOGIN</button>
+		
+		
+	</div>
+	<script>
+	 	 function myFunction(){
+	 	 	var cam = document.getElementById("myInput");
+	 	 	var khói= document.getElementById("hide1");
+	 	 	var tùng= document.getElementById("hide2");
+
+	 	 	if (cam.type === 'password') {
+	 	 		cam.type = "text";
+	 	 		khói.style.display = "block";
+	 	 		tùng.style.display = "none";
+	 	 	}
+	 	 	 else{
+	 	 	 	cam.type = "password";
+	 	 		khói.style.display = "none";
+	 	 		tùng.style.display = "block";
+
+	 	 	 }
+	 	 }
+		
+	</script>
+
+</body>
+</html>
